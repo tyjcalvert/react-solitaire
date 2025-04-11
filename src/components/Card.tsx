@@ -1,6 +1,6 @@
 import "./Card.css";
 
-type Suit = "spades" | "Hearts" | "Diamonds" | "Clubs";
+type Suit = "spades" | "hearts" | "diamonds" | "clubs";
 type Rank =
   | "A"
   | "2"
@@ -23,9 +23,9 @@ interface CardProps {
 
 const suits = {
   spades: "♠",
-  Hearts: "♥",
-  Diamonds: "♦",
-  Clubs: "♣",
+  hearts: "♥",
+  diamonds: "♦",
+  clubs: "♣",
 };
 
 const ranks = [

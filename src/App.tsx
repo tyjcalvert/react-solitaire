@@ -5,7 +5,7 @@ import Card from "./components/Card";
 function App() {
   return (
     <>
-      <Card rank="A" suit="spades" />
+      <Card rank="A" suit="diamonds" />
     </>
   );
 }
