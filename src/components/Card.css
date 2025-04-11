@@ -1,0 +1,40 @@
+:root {
+  --casino-red: #c72c41;
+  --casino-black: #000000f0;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  min-width: 200px;
+  min-height: 300px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.top-marker,
+.bottom-marker {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.bottom-marker {
+  transform: rotate(180deg);
+}
+
+.card-center {
+  font-size: 50px;
+  align-self: center;
+}
+
+.hearts,
+.diamonds {
+  color: var(--casino-red);
+}
+
+.spades,
+.clubs {
+  color: var(--casino-black);
+}
