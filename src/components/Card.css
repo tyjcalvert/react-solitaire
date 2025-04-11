@@ -25,8 +25,15 @@
 }
 
 .card-center {
+  display: grid;
   font-size: 50px;
   align-self: center;
+}
+
+.card-center.four {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
 }
 
 .hearts,

@@ -1,3 +1,5 @@
+// import { numberToWords } from "../utils/numbersToWords";
+
 import "./Card.css";
 
 type Suit = "spades" | "hearts" | "diamonds" | "clubs";
@@ -51,14 +53,14 @@ function getCardValue(rank: Rank): number {
 
 export default function Card({ rank, suit }: CardProps) {
   const suitSymbol = suits[suit];
-
+  
   return (
     <div className={`card ${suit}`}>
       <div className="top-marker">
         <div className="card-rank">{rank}</div>
         <div className="card-suit">{suitSymbol}</div>
       </div>
-      <div className="card-center">
+      <div className="card-center four">
         {Array.from({ length: getCardValue(rank) }).map((_, index) => (
           <div key={index} className={`card-suit ${suit}`}>
             {suitSymbol}
